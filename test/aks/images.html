@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Интернет-магазин AKS.ua — Главная</title>
+
+        <meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/fonts.css">
+
+        <link rel="icon" type="icon" href="favicon.ico">
+
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+        <link rel="stylesheet" href="js/plugins/popup/mpopup.css">
+        <script type="text/javascript" src="js/plugins/popup/mpopup.min.js"></script>
+
+        <script type="text/javascript" src="js/plugins/hammer/hammer.min.js"></script>
+        <script type="text/javascript" src="js/plugins/sly/sly.min.js"></script>
+
+    </head>
+
+	<body>
+
+        <!--------------------------  content  ----------------------------------->
+		<div class="wrapper">
+
+			<div class="page">
+
+                <!-- header -->
+                <div class="catalog-header catalog-header_images">
+                    <span class="catalog-list__filters catalog-list__filters_left"><i class="icon-back"></i></span>
+
+                    <p class="catalog-list__heading">8778 грн.</p>
+
+                    <span class="button__buy button__buy_images">Купить</span>
+                </div>
+                
+                <!-- big image -->
+                <div class="images__big js-images__big">
+                    <img src="http://www.aks.ua/images/products/f686b1092c44cf8c6f052cda7b92907f_large.jpg" alt=""/>
+                </div>
+
+                <!-- thumbnails -->
+                <div class="images__thumbnails js-sly-images__thumbnails">
+                    <ul>
+                        <li><img src="http://www.aks.ua/images/products/f686b1092c44cf8c6f052cda7b92907f_large.jpg" alt=""/></li>
+                        <li><img src="http://www.aks.ua/images/products/75f625aeb9e348f0a41d55a1214e3c63_large.jpg" alt=""/></li>
+                        <li><img src="http://www.aks.ua/images/products/53ff945e8a4258aef977b3173d3a2110_large.jpg" alt=""/></li>
+                        <li><img src="http://www.aks.ua/images/products/3ea3fb710057f1d668f69389ac683732_large.jpg" alt=""/></li>
+                        <li><img src="http://www.aks.ua/images/products/30b2103fcbd275e2ca22e8867b621ed4_large.jpg" alt=""/></li>
+                        <li><img src="http://www.aks.ua/images/products/795eb02c435955aceb958e0c514e00cb_large.jpg" alt=""/></li>
+                        <li><img src="http://www.aks.ua/images/products/1cef9d46c60415411188720447e9e4d2_large.jpg" alt=""/></li>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+
+			</div>
+
+		</div>
+
+
+
+
+        <!--------------------------  scripts  ----------------------------------->
+        <script type="text/javascript" src="js/default.js"></script>
+        <script>
+
+            $(window).load(function(){
+
+                var $sly_images = $('.js-sly-images__thumbnails');
+
+                $sly_images.sly({
+                    horizontal: 1,
+                    itemNav: 'basic',
+                    smart: 1,
+                    activateOn: 'click',
+                    mouseDragging: 1,
+                    touchDragging: 1,
+                    releaseSwing: 1,
+                    startAt: 0,
+                    scrollBy: 0,
+                    speed: 300,
+                    elasticBounds: 1,
+                    dragHandle: 1,
+                    dynamicHandle: 1,
+                    clickBar: 1
+                });
+
+                $(window).resize(function(e) {
+                    $sly_images.sly('reload');
+                });
+
+                $('ul > li', $sly_images).on('touch click', function(){
+                    $('.js-images__big > img').attr('src', $('img', this).attr('src').replace('_small', '_large'));
+                });
+
+                var mc = new Hammer($('.js-images__big')[0]);
+                mc.on("swipeleft swiperight", function(ev) {
+                    var src;
+                    if(ev.type == 'swipeleft'){
+                        if($('ul > li.active', $sly_images).next().length){
+                            src = $('ul > li.active', $sly_images).removeClass('active').next().addClass('active').find('img').attr('src');
+                            $('.js-images__big > img').attr('src', src);
+                        }
+                    }
+                    else if(ev.type == 'swiperight'){
+                        if($('ul > li.active', $sly_images).prev().length){
+                            src = $('ul > li.active', $sly_images).removeClass('active').prev().addClass('active').find('img').attr('src');
+                            $('.js-images__big > img').attr('src', src);
+                        }
+                    }
+                });
+
+            });
+        </script>
+
+	</body>
+</html>

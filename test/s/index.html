@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LookShop</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--<script src="js/jquery-3.2.1.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+
+    <script src="js/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="js/OwlCarousel2-2.2.1/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.2.1/owl.theme.default.min.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+
+        <!-- topline -->
+        <div class="topline">
+            <div class="inner topline-inner">
+
+                <p class="topline__pnone">Custom care:&nbsp;<a class="topline__pnone-link" href="tel:888-23-4567">888-23-4567</a></p>
+
+                <div class="topline-item">
+                    <div class="topline__currency">
+                        <select name="" id="">
+                            <option value="">$ US</option>
+                            <option value="">£ UK</option>
+                            <option value="">€ EU</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="topline-item">
+                    <a class="topline__account-link" href="#">
+                        <svg id="All_glyphs" data-name="All glyphs" xmlns="http://www.w3.org/2000/svg" width="94" height="90" viewBox="0 0 94 90"><title>icon-user</title><path d="M1946.6,447.8c-12.3-4.5-16.3-8.3-16.3-16.4,0-4.9,3.8-3.3,5.4-12.2,0.7-3.7,4-.1,4.6-8.5,0-3.4-1.8-4.2-1.8-4.2s0.9-5,1.3-8.8-2.8-17.1-19.9-17.1-20.3,12.3-19.9,17.1,1.3,8.8,1.3,8.8-1.8.8-1.8,4.2c0.6,8.4,4,4.8,4.6,8.5,1.7,8.9,5.4,7.3,5.4,12.2,0,8.1-3.9,11.9-16.3,16.4S1873,456.9,1873,460v10.5h94V460C1967,456.9,1958.9,452.3,1946.6,447.8Z" transform="translate(-1873 -380.6)"/></svg>My account
+                    </a>
+                </div>
+
+                <div class="topline-item">
+                    <span class="topline__search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                          <path class="cls-1" d="M1072.25,18.136a5.947,5.947,0,1,0-9.37-1.256l-3.43,3.428a1.545,1.545,0,0,0,0,2.2l0.02,0.02a1.558,1.558,0,0,0,2.2,0l3.42-3.428A5.966,5.966,0,0,0,1072.25,18.136Zm-7.03-1.384a3.988,3.988,0,1,1,5.64,0A4,4,0,0,1,1065.22,16.752Z" transform="translate(-1059 -8)"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="inner header-inner">
+
+                <!-- logo -->
+                <a class="header-logo" href="/"><img src="img/logo.svg" alt="LookShop"></a>
+
+                <!-- navigation -->
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li class="navigation__item"><a class="navigation__link" href="#">new</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">designers</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">women</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">men</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#">clearence</a></li>
+                    </ul>
+                </nav>
+
+                <!-- header-cart -->
+                <div class="header-cart">
+
+                    <span class="header-cart__select">Your cart</span>
+
+                    <div class="header-cart__info">
+                        <p class="header-cart__info-item">0 items</p>
+                        <p class="header-cart__info-item">$ 0</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- mobile-navigation -->
+    <section class="mobile-navigation">
+        <div class="inner mobile-navigation__inner">
+            <div class="mobile-navigation__button js-menu-button">Menu</div>
+
+            <ul class="mobile-navigation__list js-mobile-menu">
+                <li class="navigation__item"><a class="navigation__link" href="#">new</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">designers</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">women</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">men</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">clearence</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- top slider -->
+    <section class="top-slider">
+        <div class="top-slider__progress"></div>
+
+        <ul class="owl-carousel-top owl-carousel">
+            <li class="top-slider__item">
+                <div class="top-slider__text">
+                    <p class="top-slider__text-first"><span>Crazy</span></p>
+                    <p class="top-slider__text-second"><img src="img/crazy-summer.png" alt="Crazy Summer"></p>
+                    <p class="top-slider__text-third">Woman Collection</p>
+
+                    <a href="#" class="button button-green top-slider__button">Shop now</a>
+                </div>
+
+                <img class="top-slider__image" src="img/delete/slide-1.jpg" alt="">
+            </li>
+
+            <li class="top-slider__item">
+                <div class="top-slider__text">
+                    <p class="top-slider__text-first"><span>Crazy</span></p>
+                    <p class="top-slider__text-second"><img src="img/crazy-summer.png" alt="Crazy Summer"></p>
+                    <p class="top-slider__text-third">Woman Collection</p>
+
+                    <a href="#" class="button button-green top-slider__button">Shop now</a>
+                </div>
+
+                <img class="top-slider__image" src="img/delete/slide-1.jpg" alt="">
+            </li>
+
+            <li class="top-slider__item">
+                <div class="top-slider__text">
+                    <p class="top-slider__text-first"><span>Crazy</span></p>
+                    <p class="top-slider__text-second"><img src="img/crazy-summer.png" alt="Crazy Summer"></p>
+                    <p class="top-slider__text-third">Woman Collection</p>
+
+                    <a href="#" class="button button-green top-slider__button">Shop now</a>
+                </div>
+
+                <img class="top-slider__image" src="img/delete/slide-1.jpg" alt="">
+            </li>
+
+            <li class="top-slider__item">
+                <div class="top-slider__text">
+                    <p class="top-slider__text-first"><span>Crazy</span></p>
+                    <p class="top-slider__text-second"><img src="img/crazy-summer.png" alt="Crazy Summer"></p>
+                    <p class="top-slider__text-third">Woman Collection</p>
+
+                    <a href="#" class="button button-green top-slider__button">Shop now</a>
+                </div>
+
+                <img class="top-slider__image" src="img/delete/slide-1.jpg" alt="">
+            </li>
+
+            <li class="top-slider__item">
+                <div class="top-slider__text">
+                    <p class="top-slider__text-first"><span>Crazy</span></p>
+                    <p class="top-slider__text-second"><img src="img/crazy-summer.png" alt="Crazy Summer"></p>
+                    <p class="top-slider__text-third">Woman Collection</p>
+
+                    <a href="#" class="button button-green top-slider__button">Shop now</a>
+                </div>
+
+                <img class="top-slider__image" src="img/delete/slide-1.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+
+    <!-- socials -->
+    <section class="socials">
+        <div class="inner socials-inner">
+
+            <form action="" class="subscribe-form">
+                <fieldset>
+                    <div class="subscribe-form__flex">
+                        <label class="socials__label subscribe-form__label" for="email">Stay updated</label>
+                        <input class="subscribe-form__input" id="email" type="email" placeholder="Your email address">
+                        <button class="button button-green subscribe-form__button">
+                            <img src="img/icon-plus.svg" alt="">
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+
+            <div class="socials-networks">
+                <span class="socials__label">Find us here</span>
+                <a class="socials-networks__link" href="#" title="Facebook"><img src="img/icon-facebook.svg" alt="Facebook"></a>
+                <a class="socials-networks__link" href="#" title="Twitter"><img src="img/icon-twitter.svg" alt="Twitter"></a>
+                <a class="socials-networks__link" href="#" title="Pinterest"><img src="img/icon-pinterest.svg" alt="Pinterest"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- banners -->
+    <section class="banners">
+        <div class="inner banners-flex">
+
+            <div class="banners-side">
+                <a href="#" class="banner large-banner">
+                    <span class="large-banner__title">
+                        <span class="large-banner__title-first">best</span>
+                        <span class="large-banner__title-second">outfits</span>
+                        <span class="large-banner__divider-wrapper"><span class="large-banner__divider">&</span></span>
+                        <span class="large-banner__title-third">looks</span>
+                    </span>
+
+                    <img src="img/delete/banner-1.jpg" alt="">
+                </a>
+            </div>
+            
+            <div class="banners-side">
+                <a href="#" class="banner medium-banner">
+                    <span class="medium-banner__title">
+                        <span class="medium-banner__title-first">Summer</span>
+                        <span class="medium-banner__title-second">Party</span>
+                        <span class="medium-banner__title-third">Collection</span>
+                    </span>
+
+                    <img src="img/delete/banner-2.jpg" alt="">
+                </a>
+
+                <a href="#" class="banner small-banner">
+                    <span class="small-banner__thin-title">
+                        Best sellers<svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 378.9 710.4"><title>icon-angle-right</title><g id="Rectangle_5_copy" data-name="Rectangle 5 copy"><polygon points="355.2 331.5 355.2 331.5 23.7 0 0 23.7 331.5 355.2 0 686.8 23.7 710.4 378.9 355.2 355.2 331.5"/></g></svg>
+                    </span>
+
+                    <img src="img/delete/banner-3.jpg" alt="">
+                </a>
+
+                <a href="#" class="banner small-banner">
+
+                    <span class="small-banner__fat-wrapper">
+                        <span class="small-banner__fat-title">fall</span>
+                        <span class="small-banner__fat-title">leather</span>
+
+                        <span class="small-banner__fat-button">shop now</span>
+                    </span>
+
+                    <img src="img/delete/banner-4.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- middle-slider -->
+    <section class="middle-slider">
+        <div class="inner middle-slider__heading">
+            <ul class="middle-slider__category">
+                <li><a class="middle-slider__category-link middle-slider__category-link_state_active" href="#">what’s hot?</a></li>
+                <li><a class="middle-slider__category-link" href="#">Designers</a></li>
+                <li><a class="middle-slider__category-link" href="#">Featured</a></li>
+                <li><a class="middle-slider__category-link" href="#">Latest</a></li>
+            </ul>
+
+            <div class="middle-slider__category-button">
+                <select name="" id="">
+                    <option value="">What’s hot?</option>
+                    <option value="">Designers</option>
+                    <option value="">Featured</option>
+                    <option value="">Latest</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="middle-slider__list-wrapper">
+            <ul class="middle-slider__list owl-carousel-middle owl-carousel">
+                <li class="middle-slider__item">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-1.jpg" alt="Mimosa lace dress">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Mimosa lace dress</p>
+                        <p class="middle-slider__coast">$76.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item middle-slider__item_type_sale">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-2.jpg" alt="Feel tank">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Feel tank</p>
+                        <p class="middle-slider__coast">$59.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-3.jpg" alt="Hot shorts">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Hot shorts</p>
+                        <p class="middle-slider__coast">$35.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item middle-slider__item_type_sale">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-1.jpg" alt="Petrol sweater">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Petrol sweater</p>
+                        <p class="middle-slider__coast">$21.50</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-2.jpg" alt="Feel tank">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Feel tank</p>
+                        <p class="middle-slider__coast">$59.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-3.jpg" alt="Hot shorts">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Hot shorts</p>
+                        <p class="middle-slider__coast">$35.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="button button-load" href="#">Load more</a>
+        </div>
+    </section>
+
+    <!-- sales -->
+    <section class="sales">
+        <div class="inner">
+
+            <div class="sales-header">
+                <div class="sales-header__label">
+                    <div class="sales-header__title">
+                        <p class="sales-header__title-first">Clearance</p>
+                        <p class="sales-header__title-second">50</p>
+                        <p class="sales-header__title-third">
+                            <span>%</span>
+                            <span>Off</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="sales-list">
+                <li class="middle-slider__item">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-1.jpg" alt="Mimosa lace dress">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Mimosa lace dress</p>
+                        <p class="middle-slider__coast">$76.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item middle-slider__item_type_sale">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-2.jpg" alt="Feel tank">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Feel tank</p>
+                        <p class="middle-slider__coast">$59.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-3.jpg" alt="Hot shorts">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Hot shorts</p>
+                        <p class="middle-slider__coast">$35.95</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+
+                <li class="middle-slider__item middle-slider__item_type_sale">
+                    <a class="middle-slider__link" href="#">
+                        <img class="middle-slider__picture" src="img/delete/prod-1.jpg" alt="Petrol sweater">
+                        <span class="middle-slider__shop-label">
+                            <img src="img/icon-cart-filled.svg" alt="">
+                            Shop it
+                        </span>
+                    </a>
+
+                    <div class="middle-slider__item-bottom">
+                        <p class="middle-slider__title">Petrol sweater</p>
+                        <p class="middle-slider__coast">$21.50</p>
+                        <a class="button button-green middle-slider__buy-button" href="#">Add to cart<img src="img/icon-plus.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <a class="button button-load" href="#">Load more</a>
+
+        </div>
+    </section>
+
+    <!-- brands -->
+    <section class="brands">
+        <div class="inner brands-inner">
+
+            <p class="brands-title"><span class="brands-title__inner">Favourite brands</span></p>
+
+            <img src="img/brand-1.jpg" alt="Addict">
+            <img src="img/brand-2.jpg" alt="Abandon Shop">
+            <img src="img/brand-3.jpg" alt="Adidas">
+            <img src="img/brand-4.jpg" alt="Boy London">
+            <img src="img/brand-5.jpg" alt="Converse">
+            <img src="img/brand-6.jpg" alt="Calvin Klein">
+            <img src="img/brand-7.jpg" alt="Edwin">
+            <img src="img/brand-8.jpg" alt="Grenson">
+
+        </div>
+    </section>
+
+    <!-- bottom-info -->
+    <section class="bottom-info">
+        <div class="inner">
+
+            <p class="bottom-info__title">About LookShop</p>
+            <p class="bottom-info__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+
+        </div>
+    </section>
+
+    <!-- payments -->
+    <section class="payments">
+        <div class="inner payments-inner">
+            <p class="payments__label">We accept</p>
+            <img src="img/payments.png" alt="Payments">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner footer-inner">
+            <ul class="footer-links">
+                <li class="footer-links__item">
+                    <p class="footer__title">Customer Service</p>
+                    
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Terms of payment</a></li>
+                        <li><a href="">Terms of sale</a></li>
+                        <li><a href="">Delivery terms and conditions</a></li>
+                        <li><a href="">Returns and Refunds</a></li>
+                    </ul>
+                </li>
+                <li class="footer-links__item">
+                    <p class="footer__title">Information</p>
+
+                    <ul>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">How to Shop</a></li>
+                        <li><a href="#">About Nelly</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                    </ul>
+                </li>
+                <li class="footer-links__item">
+                    <p class="footer__title">Campaigns</p>
+
+                    <ul>
+                        <li><a href="#">Evening dresses</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Fashion forward</a></li>
+                        <li><a href="#">training clothes</a></li>
+                        <li><a href="#">Special Occasion Dresses</a></li>
+                    </ul>
+                </li>
+                <li class="footer-links__item">
+                    <p class="footer__title">Stores</p>
+
+                    <ul>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">London</a></li>
+                        <li><a href="#">Madrid</a></li>
+                        <li><a href="#">Tokio</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="footers-social">
+                <p class="footer__title">Social</p>
+
+                <ul class="footers-social__list">
+                    <li class="footers-social__item"><a class="footers-social__link" href="#"><img src="img/icon-footer-twitter.svg" alt="Twitter"></a></li>
+                    <li class="footers-social__item"><a class="footers-social__link" href="#"><img src="img/icon-footer-pinterest.svg" alt="Pinterest"></a></li>
+                    <li class="footers-social__item"><a class="footers-social__link" href="#"><img src="img/icon-footer-facebook.svg" alt="Facebook"></a></li>
+                    <li class="footers-social__item"><a class="footers-social__link" href="#"><img src="img/icon-footer-google.svg" alt="Google+"></a></li>
+                    <li class="footers-social__item"><a class="footers-social__link" href="#"><img src="img/icon-footer-tumblr.svg" alt="Tumblr"></a></li>
+                    <li class="footers-social__item"><a class="footers-social__link" href="#"><img src="img/icon-footer-vimeo.svg" alt="Vimeo"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-secured">
+                <img src="img/secured-label.svg" alt="100% secured">
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="inner footer-bottom__inner">
+                <span class="footer-bottom__menu-button js-bottom-menu-button"></span>
+
+                <ul class="footer-bottom__links js-bottom-menu">
+                    <li class="footer-bottom__links-item"><a href="#">Privacy & Cookies</a></li>
+                    <li class="footer-bottom__links-item"><a href="#">Terms & Conditions</a></li>
+                    <li class="footer-bottom__links-item"><a href="#">Accessibility</a></li>
+                    <li class="footer-bottom__links-item"><a href="#">Store Directory</a></li>
+                    <li class="footer-bottom__links-item"><a href="#">About Us</a></li>
+                </ul>
+
+                <div class="footer-bottom__copyright">
+                    <p>&copy;&nbsp;LookShop.com</p>
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script>
+        $(document).ready(function() {
+            // Top slider
+            initSlider();
+
+            function initSlider() {
+                $('.owl-carousel-top').owlCarousel({
+                    items:1,
+                    loop:true,
+                    margin:10,
+                    dots:true,
+                    nav:true,
+                    navText: [],
+                    autoplay:true,
+                    autoplayTimeout:5000,
+                    autoplayHoverPause:true,
+                    onInitialized: startProgressBar,
+                    onTranslate: resetProgressBar,
+                    onTranslated: startProgressBar
+                });
+            }
+
+            function startProgressBar() {
+                // apply keyframe animation
+                $('.top-slider__progress').css({
+                    'width': '100%',
+                    'transition': 'width 5000ms'
+                });
+            }
+
+            function resetProgressBar() {
+                $('.top-slider__progress').css({
+                    'width': 0,
+                    'transition': 'width 0s'
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            // Middle slider
+            $('.owl-carousel-middle').owlCarousel({
+                loop: true,
+                nav:true,
+                navText:['<svg xmlns="http://www.w3.org/2000/svg" width="378.9" height="710.4" viewBox="0 0 378.9 710.4"><g><polygon points="355.2 331.5 355.2 331.5 23.7 0 0 23.7 331.5 355.2 0 686.8 23.7 710.4 378.9 355.2 355.2 331.5"/></g></svg>', '<svg xmlns="http://www.w3.org/2000/svg" width="378.9" height="710.4" viewBox="0 0 378.9 710.4"><g><polygon points="355.2 331.5 355.2 331.5 23.7 0 0 23.7 331.5 355.2 0 686.8 23.7 710.4 378.9 355.2 355.2 331.5"/></g></svg>'],
+                navContainerClass: 'middle-slider__nav',
+                navClass: ['middle-slider__prev', 'middle-slider__next'],
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:false,
+                        center:true,
+                        stagePadding:0
+                    },
+                    640:{
+                        items:2,
+                        center: false,
+                        stagePadding:0,
+                        margin:0
+                    },
+                    768:{
+                        items:3,
+                        center: true,
+                        stagePadding:25
+                    },
+                    1024:{
+                        items:4,
+                        margin:30,
+                        stagePadding:115,
+                        startPosition: 3
+                    }
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('.js-menu-button').click(function () {
+                event.stopPropagation();
+                $(".js-mobile-menu").toggleClass('mobile-navigation__list-show');
+            });
+        });
+
+        $(document).ready(function () {
+            $('.js-bottom-menu-button').click(function () {
+                event.stopPropagation();
+                $(".js-bottom-menu").toggleClass('footer-bottom__links_show');
+            });
+        });
+    </script>
+</body>
+</html>

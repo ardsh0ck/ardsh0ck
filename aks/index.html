@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>AKS | Main</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/chosen_v1.5.1/chosen.css">
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/chosen_v1.5.1/chosen.jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/default.js"></script>
+</head>
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner header__inner">
+
+                <a href="http://www.aks.ua" class="header__logo" target="_blank">
+                    ремонтный отдел
+                </a>
+
+                <div class="header__title">
+                    Профессиональный ремонт<br>
+                    мобильных телефонов и планшетов
+                </div>
+
+                <div class="header__phones">
+                    <a class="header__phones-link" href="tel:+380443775155">(044) 377-51-55</a>
+                    <a class="header__phones-link header__phones-link_state_padded" href="tel:+380674400608">(067) 440-06-08</a>
+                    <br>
+                    <a class="header__phones-link" href="tel:+380503772882">(050) 377-28-82</a>
+                    <a class="header__phones-link header__phones-link_state_padded" href="tel:+380933772882">(093) 377-28-82</a>
+
+                    <!-- phones button -->
+                    <span class="header__phones-button js-phones-button"></span>
+                </div>
+
+            </div>
+        </header>
+
+
+        <!-- first row -->
+        <section class="first-row">
+            <div class="inner">
+
+                <!-- first row form -->
+                <form action="" class="first-row__form">
+
+                    <div class="first-row__form-item">
+                        <select class="chosen-single js-chosen" data-placeholder="Устройство">
+                            <option></option>
+                            <option>Смартфон</option>
+                            <option>Планшет</option>
+                        </select>
+                    </div>
+
+                    <div class="first-row__form-item">
+                        <select class="chosen-single js-chosen" data-placeholder="Бренд">
+                            <option></option>
+                            <option>Apple iPhone</option>
+                            <option>Google Nexus</option>
+                            <option>HTC</option>
+                            <option>Samsung</option>
+                            <option>Huawei</option>
+                            <option>LG</option>
+                        </select>
+                    </div>
+
+                    <div class="first-row__form-item">
+                        <select class="chosen-single js-chosen" data-placeholder="Модель">
+                            <option></option>
+                            <option>iPhone 3G</option>
+                            <option>iPhone 4</option>
+                            <option>iPhone 4s</option>
+                            <option>iPhone 5</option>
+                            <option>iPhone 5s</option>
+                            <option>iPhone 5c</option>
+                            <option>iPhone 6</option>
+                        </select>
+                    </div>
+
+                    <button class="button button_color_blue first-row__form-button">Найти</button>
+
+                </form>
+
+
+                <!-- first row table -->
+                <div class="first-row__table-wrapper">
+                    <p class="first-row__pre-table">
+                        <span class="desktop-text">Цена вместе с деталью</span>
+                        <span class="mobile-text">Услуги и цены</span>
+                    </p>
+
+                    <ul class="first-row__table">
+                        <li class="first-row__table-row first-row__table-heading">
+                            <div class="first-row__type-cell first-row__heading-cell">Вид услуг</div>
+                            <div class="first-row__price-cell first-row__heading-cell">Копия</div>
+                            <div class="first-row__price-cell first-row__heading-cell">Оригинал</div>
+                        </li>
+
+                        <li class="first-row__table-row">
+                            <div class="first-row__type-cell">Замена дисплейного модуля</div>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_dark">
+                                <span class="price">999</span>
+                                <span class="word">Заказать</span>
+                            </a>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button">
+                                <span class="price">1500</span>
+                                <span class="word">Заказать</span>
+                            </a>
+                        </li>
+
+                        <li class="first-row__table-row">
+                            <div class="first-row__type-cell">Замена сенсора</div>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_dark">
+                                <span class="price">800</span>
+                                <span class="word">Заказать</span>
+                            </a>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_light">
+                                <span class="price">1400</span>
+                                <span class="word">Заказать</span>
+                            </a>
+                        </li>
+
+                        <li class="first-row__table-row">
+                            <div class="first-row__type-cell">Замена aккумулятора</div>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_dark">
+                                <span class="price">700</span>
+                                <span class="word">Заказать</span>
+                            </a>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_light">
+                                <span class="price">1300</span>
+                                <span class="word">Заказать</span>
+                            </a>
+                        </li>
+
+                        <li class="first-row__table-row">
+                            <div class="first-row__type-cell">Замена динамика</div>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_dark">
+                                <span class="price">600</span>
+                                <span class="word">Заказать</span>
+                            </a>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_light">
+                                <span class="price">1200</span>
+                                <span class="word">Заказать</span>
+                            </a>
+                        </li>
+
+                        <li class="first-row__table-row">
+                            <div class="first-row__type-cell">Замена корпуса</div>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_dark">
+                                <span class="price">500</span>
+                                <span class="word">Заказать</span>
+                            </a>
+
+                            <a href="#" class="first-row__price-cell first-row__price-button first-row__price-button_color_light">
+                                <span class="price">1100</span>
+                                <span class="word">Заказать</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- second row -->
+        <section class="second-row">
+            <div class="inner">
+
+                <p class="row__title">Требуется срочный ремонт телефона или планшета?</p>
+                <p class="row__title-caption">Разберём, сделаем диагностику, заменим &ndash; быстро и с гарантией!</p>
+                
+                <ul class="service__list">
+                    <li class="service__item">
+                        <i class="service__icon service__icon_1"></i>
+
+                        <p class="service__title">Устройство быстро разряжается?</p>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_2"></i>
+
+                        <p class="service__title">Пропало изображение на дисплее?</p>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_3"></i>
+
+                        <p class="service__title">Треснуло стекло?</p>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_4"></i>
+
+                        <p class="service__title">Износился корпус?</p>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_5"></i>
+
+                        <p class="service__title">Проблема с динамиком или микрофоном?</p>
+                    </li>
+                </ul>
+                
+                <div class="text-center">
+                    <a href="" class="button button_color_gray row__button-arrowed">Решить проблему</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- third row -->
+        <section class="third-row">
+            <div class="inner">
+
+                <p class="row__title">Как мы работаем</p>
+
+                <ul class="service__list">
+                    <li class="service__item">
+                        <i class="service__icon service__icon_6"></i>
+
+                        <p class="service__title">Звонок или заявка</p>
+                    </li>
+
+                    <li>
+                        <i class="third-row__arrow third-row__arrow-top"></i>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_7"></i>
+
+                        <p class="service__title">Консультация по телефону</p>
+                    </li>
+
+                    <li>
+                        <i class="third-row__arrow third-row__arrow-bottom"></i>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_8"></i>
+
+                        <p class="service__title">Бесплатная диагностика</p>
+                    </li>
+
+                    <li>
+                        <i class="third-row__arrow third-row__arrow-top"></i>
+                    </li>
+
+                    <li class="service__item">
+                        <i class="service__icon service__icon_9"></i>
+
+                        <p class="service__title">Ремонт</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- fourth row -->
+        <section class="fourth-row">
+            <div class="inner">
+
+                <p class="row__title">Наша главная задача &mdash; вернуть к жизни ваше устройство</p>
+
+                <p class="row__title-caption">Мы прикладываем все усилия, чтобы справиться с этой задачей как можно скорее, соблюдая при этом стандарты, рекомендованные производителями телефонов</p>
+
+                <div class="fourth-row__inner">
+                    <!-- video -->
+                    <div class="fourth-row__video">
+                        <div class="fourth-row__video-inner">
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/lAm94d1lsuE?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- achievements -->
+                    <div class="fourth-row__achievements">
+                        <p class="row__title">Наши достижения:</p>
+
+                        <ul class="fourth-row__achievements-list">
+                            <li class="fourth-row__achievements-item">
+                                <p class="fourth-row__achievements-number">50000</p>
+                                <p class="fourth-row__achievements-caption">ремонтов за 8 лет</p>
+                            </li>
+
+                            <li class="fourth-row__achievements-item">
+                                <p class="fourth-row__achievements-number">15</p>
+                                <p class="fourth-row__achievements-caption">замен дисплеев ежедневно</p>
+                            </li>
+
+                            <li class="fourth-row__achievements-item">
+                                <p class="fourth-row__achievements-number">50</p>
+                                <p class="fourth-row__achievements-caption">замен стекол еженедельно</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- fifth row -->
+        <section class="fifth-row">
+            <div class="inner">
+
+                <p class="row__title">Почему нам доверяют</p>
+
+                <ul class="fifth-row__list">
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-1"></i>
+                        <p class="fifth-row__item-title">Доступная цена</p>
+                        <p class="fifth-row__item-caption">Стоимость ремонта от 250 грн</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-2"></i>
+                        <p class="fifth-row__item-title">Бесплатная диагностика</p>
+                        <p class="fifth-row__item-caption">Даже если вы не станете заказывать ремонт у нас, диагностику проведем бесплатно</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-3"></i>
+                        <p class="fifth-row__item-title">Опытные мастера</p>
+                        <p class="fifth-row__item-caption">Мастера нашего сервисного центра имею опыт работы от 4 лет</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-4"></i>
+                        <p class="fifth-row__item-title">Оригинальные запчасти</p>
+                        <p class="fifth-row__item-caption">Устанавливаем только фирменные, сертифицированные детали</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-5"></i>
+                        <p class="fifth-row__item-title">Ремонт в день обращения</p>
+                        <p class="fifth-row__item-caption">В зависимости от сложности неисправности ремонт занимает от 20 минут до 1-2 дней</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-6"></i>
+                        <p class="fifth-row__item-title">Гарантия работы</p>
+                        <p class="fifth-row__item-caption">Гарантия на услуги ремонта &mdash; 1 месяц</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-7"></i>
+                        <p class="fifth-row__item-title">Устранение любых неисправностей</p>
+                        <p class="fifth-row__item-caption">Опытные матера легко справляются с любой возникнувшей проблемой</p>
+                    </li>
+
+                    <li class="fifth-row__item">
+                        <i class="fifth-row__item-icon fifth-row__item-icon-8"></i>
+                        <p class="fifth-row__item-title">Профессиональное оборудование</p>
+                        <p class="fifth-row__item-caption">При ремонте используем оборудование мировых брендов</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- sixth row -->
+        <section class="sixth-row">
+            <div class="inner">
+
+                <p class="row__title">Доставка по Киеву и Украине</p>
+
+                <div class="delivery-text">
+                    <p>&mdash;&nbsp;предоставляем услугу ремонт мобильного телефона с доставкой на дом (наш курьер заберет поломанный телефон и привезёт обратно отремонтированный)</p>
+                    <p>&mdash;&nbsp;принимаем на ремонт телефоны из любого города Украины</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- sixth row -->
+        <section class="sixth-row">
+            <div class="inner">
+
+                <p class="row__title">Защити свой телефон!</p>
+
+                <p class="sixth-row__text">
+                    Что бы избежать последующих поломок телефона рекомендуем подобрать <a href="#">чехол</a> или <a href="#">защитное</a> стекло из самого широкого ассортимента в Украине.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- seventh row -->
+        <section class="seventh-row">
+            <div class="inner">
+
+                <p class="row__title">Оставьте заявку</p>
+
+                <p class="row__title-caption">На бесплатную консультацию специалиста</p>
+
+                <form action="" class="seventh-row__form">
+                    <div class="seventh-row__form-inner">
+                        <div class="seventh-row__form-item seventh-row__form-item_state_error">
+                            <input type="text" placeholder="Ваше имя" class="seventh-row__form-input">
+                        </div>
+
+                        <div class="seventh-row__form-item">
+                            <input type="text" class="seventh-row__form-input js-phone-input" placeholder="Ваш телефон" />
+                        </div>
+
+                        <div class="seventh-row__form-item">
+                            <input type="email" placeholder="Ваш email" class="seventh-row__form-input">
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="" class="button button_color_gray row__button-arrowed">Отправить</a>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- map row -->
+        <section class="map-row">
+            <div class="map-row__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.256548109243!2d30.449071315966293!3d50.4363218962634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cea16f1bd347%3A0xc7e5484714f6a286!2z0LLRg9C7LiDQo9GI0LjQvdGB0YzQutC-0LPQviwgMSwg0JrQuNGX0LI!5e0!3m2!1sru!2sua!4v1460285073507" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="map-row__contacts">
+                <div class="inner map-row__inner">
+
+                    <p class="map-row__inner-item">Остались вопросы? Звоните! &emsp;&emsp; <a href="tel:+38 044 377-51-55" class="map-row__phone-link">(044) 377-51-55</a></p>
+
+                    <p class="map-row__inner-item"><i class="map-row__contacts-icon"></i>Киев, ул. Ушинского, 1, <nobr>интернет-магазин</nobr> AKS.ua</p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- testimonials -->
+        <section class="testimonials">
+            <div class="inner">
+
+                <p class="row__title">Отзывы о нас</p>
+
+                <ul class="testimonials__list">
+                    <li class="testimonials__item">“Смотрел, выбирал.. как только наткнулся на статью о Xiaomi Mi Band (ВСЕ) хочу! В сухом остатке: вещь не заменимая (на вкус и цвет...) я лично использую по максимуму. ”</li>
+                    <li class="testimonials__item">“Пользуюсь пол года. Доволен, ряд функций очень удобны. Через пол года сломался браслет. Замена очень дорога. Потерял родную зарядку. ”</li>
+                    <li class="testimonials__item">“Достоинства уже написаны. Тут написали, что на улице плохо видно, я заметил что в солнечный день яркость экрана на улице сама становиться на max и все отлично видно.”</li>
+                    <li class="testimonials__item">“Стоит своих денег, брал за 18990! Была ошибка в прошивке но все решил на оф сайте! Не сразу подключил 2й Dualshock, оказалась очень крутая фишка!”</li>
+                    <li class="testimonials__item">“ШУМ ШУМ ШУМ!!! Не знаю, кто пишет тут, что она тихая... Киа Рио - штатные Кумхо солюс были намного тише. Повторяю - намного!”</li>
+                    <li class="testimonials__item">“Система охлаждения - шумит как пылесос Мало игр Нет мультимедиа возможностей - они специально вырезаны Официальная цена РСТ”</li>
+                    <li class="testimonials__item">“Что бы избежать последующих поломок телефона рекомендуем подобрать чехол или защитное стекло из самого широкого ассортимента в Украине”</li>
+                    <li class="testimonials__item">“Нормальное железо, 2 гб оперативки, приятен на вид и на ощупь. Классная камера, Touch ID нереально быстрый. Аккумулятор держит достойно, иногда проживает 2 дня.”</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- phones modal -->
+        <div class="phones-outer js-phones">
+            <div class="phones-modal">
+
+                <span class="phones-modal__close js-phones-button"></span>
+
+                <a class="phones-modal__link" href="tel:+380443775155">(044) 377-51-55</a>
+                <a class="phones-modal__link" href="tel:+380674400608">(067) 440-06-08</a>
+                <a class="phones-modal__link" href="tel:+380503772882">(050) 377-28-82</a>
+                <a class="phones-modal__link" href="tel:+380933772882">(093) 377-28-82</a>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- wrapper -->
+
+
+</body>
+</html>

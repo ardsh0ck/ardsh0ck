@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибка 502</title>
+
+    <style type="text/css">
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100vh;
+            background: rgba(237,237,237,1);
+            background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+            background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+            background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+            background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        .inner {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .error {
+            text-align: center;
+        }
+
+        .error__item {
+            margin: 25px 0 50px;
+        }
+
+            .error__item a {
+                margin: 0 20px;
+                border-bottom: 1px solid #b2ccf0;
+                text-decoration: none;
+                font-size: 14px;
+                color: #008ACE;
+            }
+
+                .error__item a:hover {
+                    border: none;
+                    color: #cc0000;
+                }
+
+        .error__text {
+            margin: 50px 0;
+            font-size: 24px;
+            color: #666;
+        }
+
+        .error__phones {
+            padding: 15px 0;
+            border-top: 1px solid #dedede;
+            font-size: 14px;
+            color: #5c5c5c;
+        }
+
+        .error__phones-item {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="inner">
+
+            <div class="error">
+
+                <a href="http://aks.ua"><img src="logo_g.png" alt="АKS.ua"></a>
+
+                <div class="error__item">
+                    <p class="error__text">Извините, произошла ошибка сервера.</p>
+
+                    <a href="#">Обновить страницу</a>&emsp;
+                    <a href="/">На главную &rarr;</a>
+                </div>
+
+                <div class="error__phones">
+
+                    <span class="error__phones-item">+38 (044) 377-51-55</span>
+                    <span class="error__phones-item">+38 (067) 440-06-08</span>
+                    <span class="error__phones-item">+38 (050) 377-28-82</span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
