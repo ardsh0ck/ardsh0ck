@@ -116,36 +116,6 @@ body {
     font-size: 13px;
 }
 
-.main-galera {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url("../img/g2.jpg") 0 0 repeat-x;
-    background-size: contain;
-    height: 100vh;
-}
-
-    .main-galera:before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,.65);
-        content: '';
-    }
-
-.main-galera__glitch {
-    position: relative;
-    z-index: 10;
-    display: inline-block;
-    width: 50%;
-    margin: 0 0 ;
-}
-
 .main-power {
     width: 100%;
     max-width: 720px;
@@ -277,31 +247,6 @@ body {
 .work_item_title {
     line-height: 1.75;
 }
-
-/* $About */
-
-.about__wrapper {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: url("../img/me.jpg") 0 0 no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.about__text {
-    margin: 150px 0 0;
-    font-size: 1.3em;
-    color: #333;
-}
-
-    .about__text p {
-        display: inline-block;
-        margin: 0;
-        padding: 0 10px;
-        background-color: #fff;
-        line-height: 2.25em;
-    }
 
 .contacts {
     margin: auto 0 20px;
