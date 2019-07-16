@@ -126,6 +126,16 @@ body {
         width: 100%;
     }
 
+.main-power__black {
+  width: 100%;
+  background-color: black;
+}
+
+.main-power__black::before {
+  padding-bottom: 100%;
+  content: '';
+}
+
 .main-power__bottom {
     display: flex;
     flex-direction: row;
