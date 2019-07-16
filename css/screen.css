@@ -400,7 +400,7 @@ body {
 
 @media (max-width: 1023px) {
   .works-list {
-    grid-template-columns: repeat(3, 50%);
+    grid-template-columns: repeat(3, 33.333%);
   }
 }
 
