@@ -156,22 +156,12 @@ body {
         color: #333;
     }
 
-.top-menu_page_about {
-    width: 90%;
-    margin: auto;
-    padding: 2em 0 3em;
-    font-size: 1.3em;
+.top-menu__icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    border-radius: 4px;
 }
-
-    .top-menu_page_about .top-menu__link {
-        color: #fff;
-        border-color: rgba(255,255,255,.35) !important;
-    }
-
-        .top-menu_page_about .top-menu__link:hover {
-            color: #cecece !important;
-            border-color: rgba(255,255,255,.25) !important;
-        }
 
 .content {}
 

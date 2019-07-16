@@ -1,1 +1,7 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="0.4in" height="0.1in" viewBox="0 0 30 6.5"><title>browser-buttons</title><circle cx="3.2" cy="3.2" r="3.2" fill="#8d8d92"/><circle cx="15" cy="3.2" r="3.2" fill="#8d8d92"/><circle cx="26.8" cy="3.2" r="3.2" fill="#8d8d92"/></svg>
+<svg height="10" viewBox="0 0 30 6.5" width="40" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#8d8d92">
+        <circle cx="3.2" cy="3.2" r="3.2"/>
+        <circle cx="15" cy="3.2" r="3.2"/>
+        <circle cx="26.8" cy="3.2" r="3.2"/>
+    </g>
+</svg>
