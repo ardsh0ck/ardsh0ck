@@ -127,6 +127,7 @@ body {
 }
 
 .main-power__black {
+  display: block;
   width: 100%;
   background-color: black;
 }
