@@ -1,0 +1,21 @@
+@import '../../../assets/scss/init/vars';
+
+.footer {
+  &Top {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-slight-gray;
+
+    &Heading {
+      text-align: center;
+      font-size: 1.25em;
+      font-weight: bold;
+      color: $color-gray;
+    }
+  }
+
+  &Bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
