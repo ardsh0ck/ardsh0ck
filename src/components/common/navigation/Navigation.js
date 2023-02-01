@@ -18,7 +18,7 @@ const Navigation = () => {
     },
     {
       url: '/about',
-      text: 'About',
+      text: 'About me',
       id: uuidv4(),
     },
     {
@@ -44,7 +44,11 @@ const Navigation = () => {
                 }
               >
                 {link.img && (
-                  <img src={link.img} className={styles.navigationLinkIcon} />
+                  <img
+                    src={link.img}
+                    className={styles.navigationLinkIcon}
+                    alt=""
+                  />
                 )}
                 {!link.img && link.text}
               </NavLink>

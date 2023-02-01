@@ -1,0 +1,18 @@
+@import '../../assets/scss/init/vars';
+
+.home {
+  &Heading {
+    margin-bottom: 24px;
+    font-size: 2em;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &Latest {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+  }
+}
