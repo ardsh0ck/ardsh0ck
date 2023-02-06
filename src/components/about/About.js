@@ -4,6 +4,7 @@ import { ReactComponent as HtmlLogo } from '../../assets/images/svg/logo-html.sv
 import { ReactComponent as CssLogo } from '../../assets/images/svg/logo-css.svg'
 import { ReactComponent as JsLogo } from '../../assets/images/svg/logo-javascript.svg'
 import { ReactComponent as ReactLogo } from '../../assets/images/svg/logo-react.svg'
+import { ReactComponent as SassLogo } from '../../assets/images/svg/logo-sass.svg'
 
 const About = () => {
   useDocumentTitle('About me')
@@ -32,7 +33,7 @@ const About = () => {
           </p>
           <p>
             I have a rich experience of close cooperation with UI/UX engineers
-            &#128133;.
+            &#128133;
           </p>
           <p>
             I've worked on creating architecture of Angular based web
@@ -52,6 +53,7 @@ const About = () => {
           <JsLogo className={styles.aboutDescriptionLogosJs} />
           <ReactLogo className={styles.aboutDescriptionLogosReact} />
           <HtmlLogo className={styles.aboutDescriptionLogosHtml} />
+          <SassLogo className={styles.aboutDescriptionLogosSass} />
           <CssLogo className={styles.aboutDescriptionLogosCss} />
         </div>
       </div>
