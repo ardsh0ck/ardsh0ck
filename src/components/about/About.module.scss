@@ -1,0 +1,145 @@
+@import '../../assets/scss/init/vars';
+
+.about {
+  &Heading {
+    margin-bottom: 24px;
+    font-size: 2em;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &Description {
+    position: relative;
+    font-size: 1.25em;
+
+    &Inner {
+      padding-bottom: 100%;
+      line-height: 1.4;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+
+      @media (min-width: 768px) {
+        padding-bottom: 60%;
+      }
+
+      @media (min-width: 1280px) {
+        padding-right: 40%;
+        padding-bottom: 0;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      p + p {
+        margin-top: 0.75em;
+      }
+    }
+
+    &Logos {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 40%;
+
+      @media (min-width: 1280px) {
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        z-index: -1;
+        width: 40%;
+        height: 100%;
+      }
+
+      &Html {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 150px;
+        height: 150px;
+        animation: htmlLogo infinite 5s linear;
+      }
+
+      &Css {
+        position: absolute;
+        left: 20%;
+        top: 15%;
+        width: 120px;
+        height: 120px;
+        animation: cssLogo infinite 6s linear;
+      }
+
+      &Js {
+        position: absolute;
+        left: 45%;
+        top: 5%;
+        width: 100px;
+        height: 100px;
+        animation: jsLogo infinite 4s linear;
+      }
+
+      &React {
+        position: absolute;
+        left: 35%;
+        top: 25%;
+        width: 150px;
+        height: 150px;
+        animation: reactLogo infinite 7s linear;
+      }
+    }
+  }
+}
+
+@keyframes cssLogo {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes htmlLogo {
+  0% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25%);
+  }
+}
+
+@keyframes jsLogo {
+  0% {
+    transform: translateY(-27%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-27%);
+  }
+}
+
+@keyframes reactLogo {
+  0% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20%);
+  }
+}
