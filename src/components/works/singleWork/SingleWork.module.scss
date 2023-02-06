@@ -1,0 +1,89 @@
+@import '../../../assets/scss/init/vars';
+
+.work {
+  &Header {
+    margin-bottom: 1.75em;
+  }
+
+  &Heading {
+    font-size: 2em;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &Url {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 0.85em;
+    line-height: normal;
+  }
+
+  &Description {
+    position: relative;
+    max-width: 75em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 1.5em;
+    padding-left: 0;
+    background-color: $color-yellow-info;
+    font-size: 0.85em;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $color-yellow-info;
+      transform: translateX(-100%);
+      content: '';
+    }
+  }
+
+  &Body {
+    font-size: 0.85em;
+
+    figure {
+      position: relative;
+      width: 100%;
+      max-width: 75em;
+      margin-top: 1.5em;
+      margin-bottom: 5em;
+      padding: 40px 0 0;
+      border-radius: 6px;
+      box-shadow: 0 0 20px #acacac;
+      overflow: hidden;
+
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+      }
+
+      &::before {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(to bottom, #ededed 0%, #dfdfdf 100%);
+      }
+
+      &::after {
+        top: 15px;
+        left: 15px;
+        width: 53px;
+        height: 12px;
+        background: url(../../../assets/images/design/browser-buttons.svg)
+          center no-repeat;
+        background-size: 100%;
+      }
+
+      img {
+        width: 100%;
+        vertical-align: bottom;
+      }
+    }
+  }
+}

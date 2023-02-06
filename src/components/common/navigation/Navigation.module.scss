@@ -1,0 +1,47 @@
+.navigation {
+  padding-top: 2em;
+  padding-bottom: 3em;
+
+  &List {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+
+  &Item {
+    &:first-child {
+      .navigationLink {
+        border: none;
+      }
+    }
+  }
+
+  &Link {
+    border-color: rgba(0, 0, 0, 0.15);
+    font-size: 0.875em;
+    font-weight: normal;
+    color: #3d3d3d;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      border-color: transparent;
+    }
+
+    &Active {
+      border-color: transparent;
+      font-weight: bold;
+
+      .navigationLinkIcon {
+        scale: 1.1;
+      }
+    }
+
+    &Icon {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      border-radius: 4px;
+      transition: all 200ms linear;
+    }
+  }
+}

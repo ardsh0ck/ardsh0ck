@@ -1,0 +1,66 @@
+@import '../../../assets/scss/init/vars';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid $color-slight-gray;
+  font-size: 0.75em;
+  color: $color-gray;
+
+  &Item {
+    flex: 1;
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  &Link {
+    padding: 8px;
+    border: none;
+    color: $color-gray;
+    transition: all 200ms ease-in-out;
+
+    &Icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+  &Author {
+    position: relative;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: -2em;
+      display: block;
+      height: 0.5em;
+      width: 1.5em;
+      content: '';
+    }
+
+    &::before {
+      top: 0;
+      background-color: #2559b5;
+    }
+
+    &::after {
+      bottom: 0;
+      background-color: #f7d648;
+    }
+  }
+}
