@@ -20,7 +20,13 @@ a {
   border-color: rgba(153, 0, 153, 0.3);
   transition: all 200ms ease-in-out;
 
-  &:hover {
-    border-color: transparent;
+  @media (hover: hover) {
+    &:hover {
+      border-color: transparent;
+    }
   }
+}
+
+em {
+  font-style: italic;
 }

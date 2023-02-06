@@ -18,27 +18,34 @@ const About = () => {
             web accessibility engineer from Ukraine &#x1F1FA;&#x1F1E6;
           </p>
           <p>
-            I'm experienced in design systems development and its implementation
-            into product.
+            I'm experienced in design systems development &#128187;&nbsp; and
+            its implementation into product.
           </p>
           <p>
             I have extensive implementation experience of web accessibility
-            specifications and into commercial products, especialy into e-shops.
+            specifications and into commercial products &#128184;, especialy
+            into e-shops.
           </p>
           <p>
-            My love is HTML semantic and using native elements features instead
-            of JS overhead.
+            My love &#128525;&nbsp; is semantic HTML and using native features
+            instead of JS overhead.
           </p>
           <p>
-            I have a rich experience of close cooperation with UI/UX engineers.
+            I have a rich experience of close cooperation with UI/UX engineers
+            &#128133;.
           </p>
           <p>
             I've worked on creating architecture of Angular based web
             application and migrating from outsource to inhouse development
-            within Rozetka company.
+            &#127968; within Rozetka company.
           </p>
-          <p>In short I have 10 years experience in interfaces development.</p>
-          <p>Since January 2022 I work on React-based projects.</p>
+          <p>
+            In short I have <em>10</em> years experience in interfaces
+            development.
+          </p>
+          <p>
+            Since January 2022 &#128198;&nbsp; I work on React-based projects.
+          </p>
         </div>
 
         <div className={styles.aboutDescriptionLogos}>
