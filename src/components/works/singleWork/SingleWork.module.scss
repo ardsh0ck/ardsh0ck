@@ -80,9 +80,20 @@
         background-size: 100%;
       }
 
-      img {
+      & > img {
         width: 100%;
+        max-width: 100%;
         vertical-align: bottom;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 480px;
+      vertical-align: bottom;
+
+      &[data-browser] {
+        max-width: 1024px;
       }
     }
   }
