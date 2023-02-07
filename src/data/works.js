@@ -104,7 +104,7 @@ const works = [
     img: 'images/thumbnails/aks_l_logo.jpg',
     title: `Reapair center's info page <span>AKS</span>`,
     urlTitle: 'AKS',
-    description: `Frontend development for AKS e-shop.`,
+    description: 'Frontend development for AKS e-shop.',
     slug: 'aks-service',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -114,7 +114,7 @@ const works = [
     img: 'images/thumbnails/belkozin_logo.jpg',
     title: `Collagene technologies factory's website <span>Belkozin</span>`,
     urlTitle: 'Belkozin',
-    description: `Frontend development for Belkozin factory.`,
+    description: 'Frontend development for Belkozin factory.',
     slug: 'belkozin',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -127,7 +127,7 @@ const works = [
     title: `E-shop <span>Yukke</span>`,
     url: 'https://yukke.com.ua/',
     urlTitle: 'Yukke',
-    description: `Frontend development for Yukke e-shop.`,
+    description: 'Frontend development for Yukke e-shop.',
     slug: 'yukke',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -141,7 +141,7 @@ const works = [
     img: 'images/thumbnails/aks_logo.jpg',
     title: `E-shop <span>AKS</span>. Version for small screens`,
     urlTitle: 'AKS',
-    description: `Frontend development for AKS e-shop.`,
+    description: 'Frontend development for AKS e-shop.',
     slug: 'aks',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -156,7 +156,7 @@ const works = [
     title: `Job board <span>RabotaPlus</span>`,
     url: 'http://rabotaplus.com.ua',
     urlTitle: 'RabotaPlus',
-    description: `Frontend development for RabotaPlus job board.`,
+    description: 'Frontend development for RabotaPlus job board.',
     slug: 'rplus',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -170,7 +170,8 @@ const works = [
     img: 'images/thumbnails/fft_logo.jpg',
     title: `Fitness and travel agency <span>Food and Fitness travel</span>`,
     urlTitle: 'Food and Fitness travel',
-    description: `Frontend development for fitnessagency Food and Fitness travel.`,
+    description:
+      'Frontend development for fitnessagency Food and Fitness travel.',
     slug: 'food-and-fitness',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -182,7 +183,7 @@ const works = [
     img: 'images/thumbnails/demo_logo.jpg',
     title: `Household chemicals e-shop <span>Demo</span>`,
     urlTitle: 'Demo',
-    description: `Frontend development for household chemicals e-shop Demo.`,
+    description: 'Frontend development for household chemicals e-shop Demo.',
     slug: 'demo',
     id: uuidv4(),
     body: `<p>Main page.</p>
@@ -193,44 +194,84 @@ const works = [
   {
     img: 'images/thumbnails/teocom_logo.jpg',
     title: `Furniture e-shop <span>Teocom</span>`,
+    url: 'http://teocom.com.ua',
+    urlTitle: 'TeoCom',
+    description: 'Frontend development for furniture e-shop TeoCom.',
     slug: 'teocom',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <img src="/images/works/teocom/001.jpg" loading="lazy" alt="Screenshot of main page" data-browser />
+    <p>Catalogue page.</p>
+    <img src="/images/works/teocom/002.jpg" loading="lazy" alt="Screenshot of catalogue page" data-browser />
+    <p>Product page.</p>
+    <img src="/images/works/teocom/003.jpg" loading="lazy" alt="Screenshot of product page" data-browser />`,
   },
   {
     img: 'images/thumbnails/brd_logo.jpg',
-    title: `Website about ukrainian resors in Berdyansk city <span>Berdyansk</span>`,
+    title: `Resorts of <span>Berdyansk</span> city`,
+    url: 'https://berdyansk.org.ua',
+    urlTitle: 'Berdyansk',
+    description:
+      'Frontend for website about ukrainian resorts in Berdyansk city',
     slug: 'berdyansk',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <figure><img src="/images/works/brd/001.jpg" loading="lazy" alt="Screenshot of main page" data-browser /></figure>`,
   },
   {
     img: 'images/thumbnails/sektor_logo.jpg',
     title: `Website about ukrainian resorts <span>Sektor24</span>`,
+    description:
+      'Frontend development for booking housing on Ukrainian resorts.',
+    urlTitle: 'Sektor24',
     slug: 'sektor-24',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <img src="/images/works/sektor24/001.jpg" loading="lazy" alt="Screenshot of main page" data-browser />
+    <p>Catalogue page.</p>
+    <img src="/images/works/sektor24/002.jpg" loading="lazy" alt="Screenshot of catalogue page" data-browser />
+    <p>Product page.</p>
+    <img src="/images/works/sektor24/003.jpg" loading="lazy" alt="Screenshot of product page" data-browser />`,
   },
   {
     img: 'images/thumbnails/veter_logo.jpg',
-    title: `Information website for offline shop <span>Noviy Veter</span>`,
+    title: `Info page for offline shop <span>Noviy Veter</span>`,
+    description: 'Frontend development for offline shop.',
     slug: 'novy-veter',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <img src="/images/works/veter/001.png" loading="lazy" alt="Screenshot of main page" data-browser />`,
   },
   {
     img: 'images/thumbnails/klass_logo.jpg',
-    title: `Template markup for <span>Klass</span> coaching center`,
+    title: `Coaching center <span>Klass</span>`,
+    description: 'Markup for coaching center Klass.',
+    urlTitle: 'Klass',
     slug: 'klass',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <img src="/images/works/klass/001.jpg" loading="lazy" alt="Screenshot of main page" data-browser />`,
   },
   {
     img: 'images/thumbnails/dom_logo.jpg',
     title: `Website for ISP <span>Dominion</span>`,
+    description: 'Frontend for ISP Dominion based on Drupal CMS.',
+    url: 'https://dominion.dn.ua',
+    urlTitle: 'Dominion',
     slug: 'dominion',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <img src="/images/works/dominion/001.jpg" loading="lazy" alt="Screenshot of main page" data-browser />`,
   },
   {
     img: 'images/thumbnails/lazy_logo.jpg',
     title: `Testimonials page markup for <span>LAZYTOUR</span>`,
+    description: 'Frontend for ISP Dominion based on Drupal CMS.',
+    urlTitle: 'LAZYTOUR',
     slug: 'lazytour',
     id: uuidv4(),
+    body: `<p>Main page.</p>
+    <img src="/images/works/lazytour/001.png" loading="lazy" alt="Screenshot of main page" data-browser />`,
   },
 ]
 
