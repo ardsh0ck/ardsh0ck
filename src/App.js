@@ -5,6 +5,7 @@ import Works from './components/works/works/Works'
 import SingleWork from './components/works/singleWork/SingleWork'
 import About from './components/about/About'
 import Music from './components/music/Music'
+import NotFound from './components/common/notFound/NotFound'
 import './App.scss'
 import ScrollToTop from './utils/scrollToTop'
 
@@ -25,6 +26,7 @@ function App(props) {
             />
             <Route element={<About title={`${titlePrefix}`} />} path="about" />
             <Route element={<Music title={`${titlePrefix}`} />} path="music" />
+            <Route element={<NotFound title={`${titlePrefix}`} />} path="*" />
           </Route>
         </Routes>
       </div>
