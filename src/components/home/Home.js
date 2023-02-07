@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './Home.module.scss'
 import works from '../../data/works'
 import History from './history/History'
-import ThumbnailWork from '../works/thumbnailWork/ThumbnailWork'
 import useDocumentTitle from '../../utils/setDocumentTitle'
+import WorksList from '../works/worksList/WorksList'
 
 const Home = () => {
   useDocumentTitle('Home')
@@ -15,19 +15,8 @@ const Home = () => {
 
       <section>
         <h1 className={styles.homeHeading}>Latest works </h1>
-        <ul className={styles.homeLatest}>
-          {latestWorks.map((work) => {
-            return (
-              <li key={work.id}>
-                <ThumbnailWork
-                  href={'works/' + work.slug}
-                  img={work.img}
-                  title={work.title}
-                />
-              </li>
-            )
-          })}
-        </ul>
+
+        <WorksList data={latestWorks} />
       </section>
     </div>
   )

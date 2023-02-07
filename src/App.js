@@ -6,6 +6,7 @@ import SingleWork from './components/works/singleWork/SingleWork'
 import About from './components/about/About'
 import Music from './components/music/Music'
 import './App.scss'
+import ScrollToTop from './utils/scrollToTop'
 
 function App(props) {
   const titlePrefix = 'ardsh0ck.name | '
@@ -13,6 +14,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="app">
+        <ScrollToTop />
         <Routes>
           <Route element={<Layout />} path="/">
             <Route index element={<Home />} />

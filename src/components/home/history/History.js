@@ -6,7 +6,6 @@ const History = () => {
   const defaultValue = history.length
   const [selected, setSelected] = useState(defaultValue - 1)
 
-  console.log(defaultValue)
   return (
     <article className={styles.history}>
       <main>

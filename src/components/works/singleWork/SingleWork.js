@@ -22,7 +22,7 @@ const SingleWork = () => {
     <article className={styles.work}>
       <header className={styles.workHeader}>
         <h1 className={styles.workHeading}>{heading}</h1>
-        {work?.urlTitle && (
+        {work?.url && (
           <Link className={styles.workUrl} to={work?.url}>
             {work.urlTitle}&nbsp;&rarr;
           </Link>
