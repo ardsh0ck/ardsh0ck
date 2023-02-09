@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { ReactComponent as VinylIcon } from '../../assets/images/svg/icon-vinyl.svg'
 import { Link } from 'react-router-dom'
+import { v4 as uuidv4 } from 'uuid'
 import useDocumentTitle from '../../utils/setDocumentTitle'
 import styles from './Music.module.scss'
 
@@ -38,7 +39,7 @@ const Music = ({ title }) => {
     fetchData()
   }, [])
 
-  console.log(post.releases)
+  //console.log(post.releases)
 
   const collection = post.releases
 
@@ -58,11 +59,8 @@ const Music = ({ title }) => {
         </div>
       ) : (
         <ul className={styles.musicList}>
-          {collection.map((realese) => (
-            <li
-              className={styles.musicItem}
-              key={'vinyl-record' + realese.basic_information.master_id}
-            >
+          {collection.map((realese, i) => (
+            <li className={styles.musicItem} key={uuidv4()}>
               <Link to={'https://discogs.com/release/' + realese.id}>
                 <figure className={styles.musicItemPicture}>
                   <img

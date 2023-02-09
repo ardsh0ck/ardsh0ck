@@ -46,6 +46,9 @@
   }
 
   &Item {
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: both;
+
     &Picture {
       position: relative;
       display: flex;
@@ -115,5 +118,20 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@for $i from 1 through 1000 {
+  .musicItem:nth-child(#{$i}) {
+    animation-delay: 0.1s * $i;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

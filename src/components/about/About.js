@@ -24,8 +24,8 @@ const About = () => {
           </p>
           <p>
             I have extensive implementation experience of web accessibility
-            specifications and into commercial products &#128184;, especialy
-            into e-shops.
+            specifications and practices into commercial products &#128184;,
+            especially into e-shops.
           </p>
           <p>
             My love &#128525;&nbsp; is semantic HTML and using native features
@@ -37,7 +37,7 @@ const About = () => {
           </p>
           <p>
             I've worked on creating architecture of Angular based web
-            application and migrating from outsource to inhouse development
+            application and migrating from outsource to in-house development
             &#127968; within Rozetka company.
           </p>
           <p>
