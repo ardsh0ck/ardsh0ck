@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react'
 import { ReactComponent as VinylIcon } from '../../assets/images/svg/icon-vinyl.svg'
 import { Link } from 'react-router-dom'
+import { v4 as uuidv4 } from 'uuid'
 import useDocumentTitle from '../../utils/setDocumentTitle'
 import styles from './Music.module.scss'
 
 const API_URL =
-  'https://api.discogs.com/users/ardsh0ck/collection/folders/0/releases?key=MEHuexzhtOzyjNmLlzWY&secret=GVDtZeudEMEFtjYxXRCSYDatkRamcmcm&sort=artist'
+  'https://api.discogs.com/users/ardsh0ck/collection/folders/0/releases?key=MEHuexzhtOzyjNmLlzWY&secret=GVDtZeudEMEFtjYxXRCSYDatkRamcmcm&sort=artist&per_page=100'
 
 const myHeaders = new Headers()
-myHeaders.append('Content-Type', 'application/json')
+myHeaders.append('Content-Type', 'application/x-www-form-urlencoded')
 
 const requestOptions = {
   method: 'GET',
@@ -38,7 +39,7 @@ const Music = ({ title }) => {
     fetchData()
   }, [])
 
-  console.log(post.releases)
+  //console.log(post.releases)
 
   const collection = post.releases
 
@@ -58,11 +59,8 @@ const Music = ({ title }) => {
         </div>
       ) : (
         <ul className={styles.musicList}>
-          {collection.map((realese) => (
-            <li
-              className={styles.musicItem}
-              key={'vinyl-record' + realese.basic_information.master_id}
-            >
+          {collection.map((realese, i) => (
+            <li className={styles.musicItem} key={uuidv4()}>
               <Link to={'https://discogs.com/release/' + realese.id}>
                 <figure className={styles.musicItemPicture}>
                   <img
