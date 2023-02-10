@@ -50,7 +50,7 @@ const Music = ({ title }) => {
   return (
     <div className={styles.music}>
       <h1 className={styles.musicHeading}>
-        My little <VinylIcon className={styles.musicHeadingIcon} /> collection
+        My tiny <VinylIcon className={styles.musicHeadingIcon} /> collection
       </h1>
 
       {isLoading ? (
