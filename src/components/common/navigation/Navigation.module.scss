@@ -5,12 +5,17 @@
   &List {
     display: flex;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
+
+    @media (min-width: 480px) {
+      gap: 3em;
+    }
   }
 
   &Item {
     &:first-child {
       .navigationLink {
+        display: block;
         border: none;
       }
     }
