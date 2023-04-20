@@ -6,10 +6,12 @@ import useDocumentTitle from '../../utils/setDocumentTitle'
 import styles from './Music.module.scss'
 
 const API_URL =
-  'https://api.discogs.com/users/ardsh0ck/collection/folders/0/releases?key=MEHuexzhtOzyjNmLlzWY&secret=GVDtZeudEMEFtjYxXRCSYDatkRamcmcm&sort=artist&per_page=100'
+  'https://api.discogs.com/users/ardsh0ck/collection/folders/0/releases?key=MEHuexzhtOzyjNmLlzWY&secret=GVDtZeudEMEFtjYxXRCSYDatkRamcmcm&sort=artist&per_page=75'
 
-const myHeaders = new Headers()
-myHeaders.append('Content-Type', 'application/x-www-form-urlencoded')
+const myHeaders = {
+  'Content-Type': 'application/x-www-form-urlencoded',
+  'User-Agent': 'ArdshockVinylLibrary/1.0 +https://ardshock.name',
+}
 
 const requestOptions = {
   method: 'GET',
@@ -38,8 +40,6 @@ const Music = ({ title }) => {
 
     fetchData()
   }, [])
-
-  //console.log(post.releases)
 
   const collection = post.releases
 
