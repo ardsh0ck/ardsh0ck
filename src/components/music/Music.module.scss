@@ -18,6 +18,15 @@
     }
   }
 
+  &Explanation {
+    position: relative;
+    font-size: 1.25em;
+
+    p + p {
+      margin-top: 0.75em;
+    }
+  }
+
   &Loader {
     display: flex;
     flex-direction: column;
