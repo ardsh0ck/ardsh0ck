@@ -3,6 +3,7 @@ import { ReactComponent as VinylIcon } from '../../assets/images/svg/icon-vinyl.
 import { Link } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 import useDocumentTitle from '../../utils/setDocumentTitle'
+import clsx from 'clsx'
 import styles from './Music.module.scss'
 
 const API_KEY = process.env.REACT_APP_DISCOGS_API_KEY
@@ -70,7 +71,7 @@ const Music = ({ title }) => {
         </p>
         <p>
           Currently you can see 10 lates records &#127925;&nbsp;in my
-          collection.{' '}
+          collection.
         </p>
         <p>
           Or look &#128064; at my collection&nbsp;
@@ -113,6 +114,14 @@ const Music = ({ title }) => {
               </Link>
             </li>
           ))}
+          <li className={clsx([styles.musicItem, styles.musicItemDummy])}>
+            <Link
+              to={'https://www.discogs.com/user/ardsh0ck/collection'}
+              className={styles.musicItemDummyLink}
+            >
+              &#127897;&nbsp;All records
+            </Link>
+          </li>
         </ul>
       )}
     </div>

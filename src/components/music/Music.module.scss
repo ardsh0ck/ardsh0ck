@@ -120,6 +120,35 @@
         }
       }
     }
+
+    &Dummy {
+      grid-column: 2 / 4;
+
+      @media (min-width: 768px) {
+        grid-column: 3 / 5;
+      }
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
+
+      &Link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border: 1px solid $color-light-gray;
+        font-weight: bold;
+        color: $color-gray;
+
+        @media (hover: hover) {
+          &:hover {
+            border: 1px solid $color-gray;
+          }
+        }
+      }
+    }
   }
 }
 
