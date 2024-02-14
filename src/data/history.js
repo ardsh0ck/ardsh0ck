@@ -21,6 +21,11 @@ const history = [
     year: '2022',
     id: uuidv4(),
   },
+  {
+    img: 'images/history/2023.jpg',
+    year: '2023',
+    id: uuidv4(),
+  },
 ]
 
 export default history
